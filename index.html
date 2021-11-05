@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&display=swap" rel="stylesheet">
+
+    <title>Hotel California</title>
+
+</head>
+
+<body>
+
+    <header class="contenedor-header">
+
+        <!--CONTENEDOR LOGO HEADER-->
+        <div class="contenedor-logo">
+
+            <a href="index.html">
+                <img src="img/logo.png" alt="logo-header">
+            </a>
+
+        </div>
+
+        <!--CONTENEDOR NAV-->
+        <div class="nav">
+
+            <nav class="navigation">
+
+                <a href="index.html" id="boton-index">HOME</a>
+                <a href="habitaciones.html">HABITACIONES</a>
+                <a href="servicios.html">SERVICIOS</a>
+
+            </nav>
+
+        </div>
+
+        <div class="btn-menu">
+            <button>
+                 <img src="img/menu.png" alt="menu">
+            </button>
+
+        </div>
+
+    </header>
+
+    <main class="contenedor-main-index">
+
+        <!--CONTENEDOR IMAGEN PPAL-->
+        <div class="imagen-principal">
+            <img src="img/hotel.jpg" alt="img-hotel">
+        </div>
+
+        <!--SECCION DESCRIPCION PRINCIPAL-->
+        <section class="seccion-descripcion">
+
+            <!--CONTENEDOR DESCRIPCION PPAL-->
+            <div class="contenedor-descripcion">
+
+                <h1>Un lugar para descubrir</h1>
+                <div class="linea-horizontal"></div>
+
+                <p>Somos un hotel boutique con una ubicación privilegiada frente al mar. Nuestros huéspedes podrán disfrutar del acceso exclusivo a nuestra playa privada sobre la costa, así como de la piscina climatizada interna y externa, hidromasaje, sauna
+                    seco, baño finlandés, servicio de masajes, gimnasio, estacionamiento privado y WI-FI.</p>
+                <p>Diseño, confort y un meticuloso servicio, una excelente combinación para una excelente estadia. Con la última tecnología, una fusión entre lujo, funcionalidad y bienestar. Por viajes o por placer somos la mejor opción</p>
+
+            </div>
+
+        </section>
+
+        <!--SECCION VALORACION-->
+        <section class="seccion-valoracion sombra texto-centrado">
+
+            <h1>Valores</h1>
+
+            <div class="contenedor-valoracion">
+
+                <div class="contenido-valoracion">
+
+                    <h4>Calidad</h4>
+                    <img src="img/icono-calidad.png" alt="icono-calidad">
+
+                </div>
+
+                <div class="contenido-valoracion">
+
+                    <h4>Confianza</h4>
+                    <img src="img/icono-confianza.png" alt="icono-confianza">
+
+                </div>
+
+                <div class="contenido-valoracion">
+
+                    <h4>Innovacion</h4>
+                    <img src="img/icono-innovacion.png" alt="icono-innovacion">
+
+                </div>
+
+                <div class="contenido-valoracion">
+
+                    <h4>Integridad</h4>
+                    <img src="img/icono-integridad.png" alt="icono-integridad">
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!--SECCION FORMULARIO-->
+        <section class="seccion-formulario texto-centrado">
+
+            <!--CONTENEDOR FORMULARIO-->
+            <div class="contenedor-formulario">
+
+                <h3>Hace tu reserva</h3>
+
+                <p class="texto-izquierda">Si desea realizar una reserva para la estadia en el Hotel California, complete este formulario y nos pondremos en contacto con ustede lo antes posible.</p>
+
+                <div class="linea-formulario"></div>
+
+                <form id="form" action="" class="contenido-between">
+
+                    <div class="d-flex centrar-contenido">
+
+                        <label for="nombre">Nombre:</label>
+                        <input id="inp-nombre" type="text" name="nombre" value="" placeholder="Nombre">
+
+                    </div>
+
+                    <div class="d-flex centrar-contenido">
+
+                        <label for="telefono">Telefono:</label>
+                        <input id="inp-numero" type="text" name="telefono" value="">
+
+                    </div>
+
+                    <div class="d-flex centrar-contenido">
+
+                        <label for="correo">Correo:</label>
+                        <input id="inp-email" type="email" name="correo" value="" placeholder="mail@ejemplo.com">
+
+                    </div>
+
+                    <div class="d-flex centrar-contenido">
+
+                        <label for="fecha-reserva">Fecha Ingreso:</label>
+                        <input id="inp-fecha" type="date" name="fecha-reserva">
+
+                    </div>
+
+                    <div class="d-flex centrar-contenido">
+
+                        <label for="fecha-reserva-final">Fecha Salida:</label>
+                        <input type="date" name="fecha-reserva-final">
+
+                    </div>
+
+                    <div class="d-flex centrar-contenido">
+
+                        <label for="tipo-habitacion">Habitacion:</label>
+                        <select id="select-habitacion" name="tipo-habitacion">
+    
+                            <option value="Suite Presidencial">Suite Presidencial</option>
+                            <option value="Habitacion Deluxe">Habitacion Deluxe</option>
+                            <option value="Habitación Doble">Habitación Doble</option>
+                            <option value="Habitación Simple">Habitación Simple</option>
+                            
+                         </select>
+
+                    </div>
+
+                    <div class="contenido-centrado contenedor-captcha">
+
+                        <p id="texto-validar"></p>
+                        <input class="texto-centrado" id="validar" type="text" value="" placeholder="Ingrese Captcha ">
+
+                    </div>
+
+                    <div>
+
+                        <button type="button" id="btn-enviar" class="btn">Enviar</button>
+
+                    </div>
+
+                </form>
+
+            </div>
+
+        </section>
+
+        <!--ASIDE COMENTARIOS-->
+        <aside class="aside-comentarios">
+
+            <h3 class="texto-centrado">OPINIONES</h3>
+
+            <!-- CONTENEDOR OPINIONES-->
+            <div class="contenedor-comentarios">
+
+                <a href="#form">
+                    <button class="btn">Reservar</button>
+                </a>
+
+                <div class="contenido-comentarios overflow">
+
+                    <div>
+
+                        <div class="contenido-centrado">
+
+                            <h4>Magali</h4>
+
+                            <div class="icono">
+
+                                <img src="img/estrella.png" alt="estrella">
+                                <img src="img/estrella.png" alt="estrella">
+                                <img src="img/estrella.png" alt="estrella">
+                                <img src="img/estrella.png" alt="estrella">
+                                <img src="img/estrella.png" alt="estrella">
+
+                            </div>
+
+                        </div>
+
+                        <p>Excelentes y muy confortables todas las instalaciones. Servicio y atención únicas!! Hicieron nuestras vacaciones inolvidables! Esperamos volver pronto
+                        </p>
+
+                    </div>
+
+                    <div>
+
+                        <div class="contenido-centrado">
+
+                            <h4>Matias</h4>
+
+                            <div class="icono">
+
+                                <img src="img/estrella.png" alt="estrella">
+                                <img src="img/estrella.png" alt="estrella">
+                                <img src="img/estrella.png" alt="estrella">
+                                <img src="img/estrella.png" alt="estrella">
+                                <img src="img/estrella.png" alt="estrella">
+
+                            </div>
+
+                        </div>
+
+                        <p>Excelente lugar! La atención, las instalaciones, todos los servicios impecables. Perfecto para tomarse unos días de descanso. Todo un lujo!!
+                        </p>
+
+                    </div>
+
+                    <div>
+
+                        <div class="contenido-centrado">
+
+                            <h4>Renata</h4>
+
+                            <div class="icono">
+
+                                <img src="img/estrella.png" alt="estrella">
+                                <img src="img/estrella.png" alt="estrella">
+                                <img src="img/estrella.png" alt="estrella">
+                                <img src="img/estrella.png" alt="estrella">
+                                <img src="img/estrella.png" alt="estrella">
+
+                            </div>
+
+                        </div>
+
+                        <p>Hermoso lugar!! La verdad que es increíble!! Disfrutamos de las piletas, la chancha de tennis, el spa!!!... es la segunda vez que vamos y nada para criticar!!! Excelente!!
+                        </p>
+
+                    </div>
+
+                    <div>
+
+                        <div class="contenido-centrado">
+
+                            <h4>Sol</h4>
+
+                            <div class="icono">
+
+                                <img src="img/estrella.png" alt="estrella">
+                                <img src="img/estrella.png" alt="estrella">
+                                <img src="img/estrella.png" alt="estrella">
+                                <img src="img/estrella.png" alt="estrella">
+                                <img src="img/estrella.png" alt="estrella">
+
+                            </div>
+
+                        </div>
+
+                        <p>Con mi familia lo elegimos cada año!! La atención y los servicios que ofrecen son cada vez mejores!! Hacen que nuestras vacaciones sean perfectas!!
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </aside>
+
+        <!--ASIDE TABLA DE PRECIOS-->
+        <aside class="aside-tabla">
+
+            <!--CONTENEDOR TABLA DE PRECIOS-->
+            <div class="contenedor-tabla">
+
+                <table class="tabla-precios">
+
+                    <tr class="texto-negrita">
+
+                        <td>
+                            Habitación
+                        </td>
+                        <td>
+                            Personas
+                        </td>
+                        <td>
+                            Valor
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>
+                            Suite Presidencial
+                        </td>
+                        <td>
+                            2-4
+                        </td>
+                        <td>
+                            $ 15.200
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>
+                            Deluxe
+                        </td>
+                        <td>
+                            2-4
+                        </td>
+                        <td>
+                            $ 10.200
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>
+                            Doble tradicional
+                        </td>
+                        <td>
+                            2
+                        </td>
+                        <td>
+                            $8.500
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>
+                            Simple
+                        </td>
+                        <td>
+                            1
+                        </td>
+                        <td>
+                            $5.000
+                        </td>
+
+                    </tr>
+
+                </table>
+
+            </div>
+
+        </aside>
+
+        <!--TABLA DINAMICA-->
+        <div class="contenedor-adm ">
+
+            <h2 class="texto-centrado">REGISTRO RESERVAS</h2>
+
+            <div class="contenedor-filtro">
+                <select class="select-filtro font-size" id="select-habitacion-filtro" name="tipo-habitacion">
+    
+                    <option value="">---SELECCIONE UN FILTRO---</option>
+                    <option value="Suite Presidencial">Suite Presidencial</option>
+                    <option value="Habitacion Deluxe">Habitacion Deluxe</option>
+                    <option value="Habitación Doble">Habitación Doble Tradicional</option>
+                    <option value="Habitación Simple">Habitación Simple</option>
+                    
+                 </select>
+
+                <input class="font-size" type="text" name="inp-filtro" id="inp-text-filtro" value="" placeholder="INGRESE UN FILTRO">
+            </div>
+
+            <div class="botonera">
+                <button id="filtrar" class="btn">
+                    FILTRAR
+                </button>
+                <button id="limpiar-filtro" class="btn">
+                    LIMPIAR FILTROS
+                </button>
+
+            </div>
+
+
+            <table class="font-size tabla-dinamica-fila-datos">
+
+                <tr class="texto-negrita">
+                    <td>NOMBRE</td>
+                    <td>NUMERO</td>
+                    <td>EMAIL </td>
+                    <td>FECHA </td>
+                    <td>HABITACION</td>
+                    <td class="td-button"></td>
+                    <td class="td-button"></td>
+                </tr>
+
+            </table>
+
+            <table id="tabla-dinamica" class="font-size">
+
+            </table>
+
+            <div class="botonera">
+                <button id="carga-automatica" class="btn">Carga Automatica</button>
+                <button id="limpiar-tabla" class="btn">Limpiar</button>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="contenedor-footer texto-justificado">
+
+        <div class="d-flex">
+
+            <div class="logo-footer">
+                <a href="#"><img src="img/logo-hotel-BLANCO.png" alt="logo-hotel"></a>
+            </div>
+
+            <div class="tabla-redes">
+
+                <table class="icono">
+
+                    <tr>
+
+                        <td>
+                            <img src="img/facebook.png" alt="icono-facebook">
+                        </td>
+
+                        <td>
+                            <p>Facebook</p>
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>
+                            <img src="img/instagram.png" alt="icono-instagram">
+                        </td>
+
+                        <td>
+                            <p>Instagram</p>
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>
+                            <img src="img/whatsapp.png" alt="icono-whatsapp">
+                        </td>
+
+                        <td>
+                            <p>WhatsApp</p>
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>
+                            <img src="img/gmail.png" alt="icono-mail">
+                        </td>
+
+                        <td>
+                            <p>E-mail</p>
+                        </td>
+
+                    </tr>
+
+                </table>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <script type="text/javascript" src="js/toogle-menu.js"></script>
+    <script type="text/javascript" src="js/captcha.js"></script>
+
+
+</body>
+
+</html>
