@@ -171,9 +171,10 @@ async function cargarUserNuevo(usernuevo) {
         } else {
             console.log(res);
         }
-    } catch (error) {
-        console.log(error);
+    } catch (errores) {
+        console.log(errores);
     }
+    // MODIFIQUE EL NOMBRE DE LA VARIABLE DEL CATCH TASK21
 }
 
 //Carga x 3 de un registro Ramdom
