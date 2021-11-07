@@ -78,11 +78,13 @@ function verificarFormulario() {
 }
 
 function isCaptchaCorrecto(textoValidar, inpValidar) {
+    //GarridoMatias 7/11/2021 - Task25 - Fix en isCaptchaCorrecto - Se agrego variable "validar"
+    let validar= inpValidar.value;
     //se compara el valor tipeado con el valor establecido de captcha, en caso no coincidir, sobreescribimos el contenido del input y le agregamos la clase para indicar el error
-    if (textoValidar == inpValidar.value) {
+    if (textoValidar == validar) {
         return true;
     } else {
-        inpValidar.value = "";
+        validar = "";
         inpValidar.classList.add("clase-error");
         generarCaptcha();
     }
