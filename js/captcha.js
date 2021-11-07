@@ -1,6 +1,6 @@
-"use strict";
+﻿"use strict";
 
-//CAPTCHA
+//captcha
 let btn = document.querySelector("#btn-enviar");
 btn.addEventListener("click", verificarFormulario);
 let captcha = document.getElementById("texto-validar");
