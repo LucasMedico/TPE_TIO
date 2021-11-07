@@ -128,7 +128,9 @@ function ponerEnRojoCasillaIncompletas(inpEmail, inpNombre, inpNumero, inpFecha,
 
 function generarCaptcha() {
     let capcharesultante = "";
-    for (let i = 0; i < 6; i++) {
+	//LucasMedico - 11/07/2021 - Task22 - Fix en generarCaptcha - Corrigo fix agregando la variable countMax
+	let countMax = 6;
+    for (let i = 0; i < countMax; i++) {
         capcharesultante += caracteres.charAt(Math.floor(Math.random() * caracteres.length));
     }
     captcha.innerHTML = capcharesultante;
