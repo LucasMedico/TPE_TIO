@@ -54,9 +54,9 @@ let inpFiltroText = document.getElementById("inp-text-filtro");
 
 cargaServicioApi(1);
 
-
+// Magali Garrido 8/11/2021 Task24 - Fix en verificarFormulario
 function verificarFormulario() {
-    //variables para verificar captcha
+    
     let textoValidar = document.getElementById("texto-validar").innerHTML;
     let inpValidar = document.getElementById("validar");
 
@@ -65,7 +65,7 @@ function verificarFormulario() {
         if (isCaptchaCorrecto(textoValidar, inpValidar)) {
             btn.innerHTML = "FORMULARIO ENVIADO";
 
-            agregarUser(); //esto tambien
+            agregarUser(); 
 
             ponerEnRojoCasillaIncompletas(inpEmail, inpNombre, inpNumero, inpFecha, inpValidar);
             // Al pasar las dos condiciones necesarias para enviar el formulario, cambiamos el contenido del button
