@@ -1,5 +1,4 @@
 Se debera agregar un archivo con extensión ".txt" que debera incluir lo siguiente:
 Título: PROYECTO TPE Tecnología de la Información en las Organizaciones.
-Integrantes: Matias Garrido, Magali Garrido, Franco Girolami, Jorge Luis Smoes
-Comisión: 
+Integrantes: Matias Garrido, Magali Garrido, Franco Girolami, Jorge Luis Smoes, Lucas Medico
 Grupo: 29
