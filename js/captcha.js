@@ -12,7 +12,8 @@ const mes = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
 const anio = 2021;
 const febrero = 2;
 const agosto = 8;
-const habitaciones = ["Suite Presidencial", "Habitacion Deluxe", "Habitación Simple"];
+//Agrego una habitación - Task07
+const habitaciones = ["Suite Presidencial", "Habitacion Deluxe", "Habitación Individual", "Habitación de lujo"];
 const numeroPaginacion = 5;
 
 let cantidadPaginas;
